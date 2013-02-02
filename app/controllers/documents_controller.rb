@@ -15,6 +15,8 @@ class DocumentsController < ApplicationController
   def show
     @document = Document.find(params[:id])
 
+    @document.view_count ||= 0
+
     @document.view_count += 5
     @document.save
 
