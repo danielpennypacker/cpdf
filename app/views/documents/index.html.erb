@@ -1,0 +1,27 @@
+<h1>Listing documents</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th>View count</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @documents.each do |document| %>
+  <tr>
+    <td><%= document.title %></td>
+    <td><%= document.body %></td>
+    <td><%= document.view_count %></td>
+    <td><%= link_to 'PDF', "/documents/#{document.id}.pdf" %></td>
+    <td><%= link_to 'Edit', edit_document_path(document) %></td>
+    <td><%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Document', new_document_path %>
