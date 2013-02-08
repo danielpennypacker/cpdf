@@ -1,26 +1,66 @@
-<h1>Listing documents</h1>
+<div id="header">
+  <ul>
+    <li>
+      <h2>Source Book</h2>
+    </li>      
+    <li id="volume">&bull; Volume One</li>
+    <li>
+      <a href="#about">
+        About
+      </a>
+    </li>
+    <li>
+      <a href="#archive">
+        Archive
+      </a>
+    </li>
+    <li id="order">
+        # of 50 <a href="#">Order Now</a>
+    </li>
+  </ul>
+</div>
+<!-- div id="labels">
+  <div class="tags">
+    Title
+  </div>
+  <div class="resource">
+    Body
+  </div>
+  <div class="views">
+    View Info
+  </div>
+</div -->
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th>View count</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+<div id="items">
 <% @documents.each do |document| %>
-  <tr>
-    <td><%= document.title %></td>
-    <td><%= document.body %></td>
-    <td><%= document.view_count %></td>
-    <td><%= link_to 'PDF', "/documents/#{document.id}.pdf" %></td>
-    <td><%= link_to 'Edit', edit_document_path(document) %></td>
-    <td><%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+  <article class="item" id="test">
+    
+    <div class="forward">&rarr;</div>
+    <div class="backward">&larr;</div>
+    
+    <div class="screens">
+
+      <h1 class="title screen thing0"> 
+        <%= document.title %>
+      </h1>
+      <div class="screen thing1">
+        <div class="copy">
+          <%= document.body %>
+        </div>
+      </div>
+      <div class="views">
+          <div class="links">
+            <%= document.view_count %>
+            <%= link_to 'PDF', "/documents/#{document.id}.pdf" %>
+            <%= link_to 'Edit', edit_document_path(document) %>
+            <%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+      <div>
+
+    </div>
+  </article>
 <% end %>
-</table>
+</div>
 
 <br />
 
