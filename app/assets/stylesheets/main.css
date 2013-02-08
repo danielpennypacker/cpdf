@@ -1,0 +1,139 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "Maison Neue", helvetica !important;
+}
+
+
+.labels {
+	font-family: "Maison Neue Mono", helvetica !important;
+}
+
+
+/* header */
+
+#header { 
+	position: fixed;
+	width: 100%;
+	padding: 40px 0px;
+
+	z-index: 1000000;
+}
+
+#header h2, #header div, #header ul, #header li {
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+#header h2, #volume {
+	font-size: 16px;
+}
+
+#header h2 {
+	padding-right: 12px;
+	padding-left: 40px;
+}
+
+#header ul {
+	width: 100%;
+	font-family: "Maison Neue", helvetica !important;
+
+}
+
+#header li a {
+	font-size: 10px;
+	padding: 2px;
+	background: #ddd;
+	margin: 0px 0px 0px 15px;
+	text-decoration: none;	
+}
+
+#header li#order {
+	float: right;
+	margin-right: 40px;
+}
+
+
+/* items */
+
+article {
+	border: 1px dotted blue;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.screens {
+	width: 1000000px;
+	overflow: hidden;
+}
+
+.screen {
+	float: left;
+}
+
+.title {
+	font-size: 80px;
+	text-align: center;
+	margin: 0px;
+}
+
+.copy {
+	font-size: 15px;
+	line-height: 24px;
+	padding: 150px 200px 40px 40px;
+
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-count:2;
+
+	-moz-column-gap:80px; /* Firefox */
+	-webkit-column-gap:80px; /* Safari and Chrome */
+	column-gap:80px;
+
+}
+
+.views {
+	position: fixed;
+	top: 100;
+	left: 100;
+	padding: 200px;
+}
+
+/* arrows */
+
+.forward, .backward {
+	display: block;
+	position: fixed;
+	margin-top: -25px;
+	top: 50%;
+	height: 50px;	
+	width: 50px;
+	
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+
+	opacity: .5;
+
+	cursor: pointer;
+}
+
+.forward:hover, .backward:hover {
+	opacity: 1;
+}
+
+.forward {
+	right: 20px;
+}
+
+.backward {
+	left: 20px;
+}
+
