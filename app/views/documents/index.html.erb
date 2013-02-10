@@ -31,9 +31,21 @@
   </div>
 </div -->
 
+
+<div id="index">
+  <ul>
+    <li>
+      <a href="#">
+        The Database
+      </a>
+    </li>
+  </ul>
+
+</div>
+
 <div id="items">
 <% @documents.each do |document| %>
-  <article class="item" id="test">
+  <article class="item" id="article-<%= document.view_count %>">
     
     <div class="forward">&rarr;</div>
     <div class="backward">&larr;</div>
@@ -65,3 +77,9 @@
 <br />
 
 <%= link_to 'New Document', new_document_path %>
+<br />
+
+<br />
+
+<br />
+

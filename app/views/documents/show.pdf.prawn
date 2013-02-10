@@ -1,7 +1,8 @@
 require "prawn/measurement_extensions"
 
-prawn_document(:margin => [27,9,27,45], :page_size => [612, 792]) do |pdf|
 
+
+prawn_document(:margin => [27,9,27,45], :page_size => [612, 792]) do |pdf|
 
   #opacity square
   pdf.transparent( (@document.view_count%50).to_f/100) do
