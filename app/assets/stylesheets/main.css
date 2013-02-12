@@ -1,15 +1,36 @@
 * {
 	margin: 0px;
 	padding: 0px;
+	font-family: "Maison Neue", helvetica !important;	
 }
 
 body {
 	font-family: "Maison Neue", helvetica !important;
 }
 
+/* different panes */
 
-.labels {
-	font-family: "Maison Neue Mono", helvetica !important;
+#site-container {
+	overflow: hidden;
+}
+
+#landing {
+}
+
+#about {
+	background: #f2f2f2;
+}
+
+#archive {
+	background: #ccc;
+}
+
+#shop {
+	background: #999;
+}
+
+#about, #archive, #landing, #shop {
+	float: left;
 }
 
 
@@ -30,13 +51,14 @@ body {
 	padding: 0px;
 }
 
-#header h2, #volume {
+#header li h2 a, #volume {
 	font-size: 16px;
 }
 
-#header h2 {
-	padding-right: 12px;
-	padding-left: 40px;
+#header li h2 a{
+	margin: 0px;
+	background: transparent;	
+	padding: 0px 12px 0px 40px;
 }
 
 #header ul {
@@ -47,10 +69,12 @@ body {
 
 #header li a {
 	font-size: 10px;
-	padding: 2px;
+	padding: 5px 10px 5px 5px;
 	background: #ddd;
 	margin: 0px 0px 0px 15px;
 	text-decoration: none;	
+
+	cursor: pointer;
 }
 
 #header li#order {
@@ -58,52 +82,172 @@ body {
 	margin-right: 40px;
 }
 
+#header li#order a {
+	background: yellow;
+}
+
+
+/* list of articles */
+
+#index {
+	position: absolute;
+	top: 100px;
+	left: 40px;
+	padding: 0px 40px 0px 0px;
+}
+
+#index ul{
+	font-size: 14px;
+	list-style-type: none;
+	line-height: 30px;
+}
+
+#index ul li {
+	clear: both;
+}
+
+#index ul a{
+	color: black;
+	font-weight: bold;
+
+	padding-left: 3px;
+	padding-right: 3px;
+
+	display: block;
+	float: left;
+}
+
+#index ul a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.list-category {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12px;
+	width: 90px;
+	display: block;
+	float: left;
+}
+
+.list-tags{
+	font-size: 12px;
+	display: block;
+	float: left;
+	padding-left: 5px;
+}
+
+
+/* hiding and showing articles */
+
+.close {
+	position: fixed;
+	top: 100px;
+	left: 120px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.close:hover {
+	text-decoration: none;
+	color: white;
+	background: black;
+}
 
 /* items */
 
 article {
-	border: 1px dotted blue;
+	border: 1px dotted white;
 	width: 100%;
-	overflow: hidden;
 	position: relative;
+	display: none;
+
+	background: rgba(255,255,255,.9);
+
+	-webkit-transition:all 0.3s;
+
 }
 
 
-.screens {
-	width: 1000000px;
+/*.screens {
+	width: 100%;
 	overflow: hidden;
 }
 
 .screen {
 	float: left;
+	clear: left;
+	border: 1px dotted red;
+	display: block;	
+}
+*/
+
+.content {
+	margin: 200px 120px 20px 120px;
 }
 
 .title {
+	margin-left: -5px;
+
 	font-size: 80px;
-	text-align: center;
-	margin: 0px;
+	line-height: 80px;
+	text-align: left;
+	width: 800px;
+}
+
+.category {
+	margin-top: 20px;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-weight: bold;
 }
 
 .copy {
 	font-size: 15px;
 	line-height: 24px;
-	padding: 150px 200px 40px 40px;
+	margin: 20px 0px 40px 0px;
+	width: 800px;
+	float: left;
+
+	font-weight: 100;	
 
 	-moz-column-count:2; /* Firefox */
 	-webkit-column-count:2; /* Safari and Chrome */
 	column-count:2;
 
-	-moz-column-gap:80px; /* Firefox */
-	-webkit-column-gap:80px; /* Safari and Chrome */
-	column-gap:80px;
+	-moz-column-gap:40px; /* Firefox */
+	-webkit-column-gap:40px; /* Safari and Chrome */
+	column-gap:40px;
 
 }
 
+.tags {
+	list-style-type: none;
+
+	width: 100px;
+	margin: 20px 20px 40px 20px;	
+	float: left;
+
+	font-weight: normal;
+
+	font-size:; 10px;
+}
+
+.tags li{
+	margin-bottom: 5px;
+
+}
+
+.image-holder {
+	margin: 20px 0px 0px 0px;	
+	background: #ddd;
+	height: 400px;
+	width: 600px;
+}
+
 .views {
-	position: fixed;
-	top: 100;
-	left: 100;
-	padding: 200px;
+	margin: 20px 0px 0px 0px;
 }
 
 /* arrows */
@@ -137,3 +281,29 @@ article {
 	left: 20px;
 }
 
+.next-title, .prev-title {
+	font-size: 10px;
+	line-height: 12px;
+	padding: 10px 20px 10px 10px;
+	position: absolute;
+	background: black;
+	color: white;
+	text-align: left;
+
+	display: none;
+}
+
+.next-title {
+	right: 0px;
+}
+
+.prev-title {
+	left: 0px;
+}
+
+.clear {clear: both;}
+
+
+.show {
+	display: block;
+}

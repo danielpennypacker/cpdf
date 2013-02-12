@@ -1,85 +1,109 @@
 <div id="header">
   <ul>
     <li>
-      <h2>Source Book</h2>
+      <h2><a title="landing" id="logo">Source Book</a></h2>
     </li>      
     <li id="volume">&bull; Volume One</li>
     <li>
-      <a href="#about">
+      <a title="about">
         About
       </a>
     </li>
     <li>
-      <a href="#archive">
+      <a title="archive">
         Archive
       </a>
     </li>
     <li id="order">
-        # of 50 <a href="#">Order Now</a>
+        1st edition, # of 50 <a title="shop">Order Now</a>
     </li>
   </ul>
 </div>
-<!-- div id="labels">
-  <div class="tags">
-    Title
-  </div>
-  <div class="resource">
-    Body
-  </div>
-  <div class="views">
-    View Info
-  </div>
-</div -->
+<div id="site-container">
+  <div id="page-container">
 
 
-<div id="index">
-  <ul>
-    <li>
-      <a href="#">
-        The Database
-      </a>
-    </li>
-  </ul>
-
-</div>
-
-<div id="items">
-<% @documents.each do |document| %>
-  <article class="item" id="article-<%= document.view_count %>">
-    
-    <div class="forward">&rarr;</div>
-    <div class="backward">&larr;</div>
-    
-    <div class="screens">
-
-      <h1 class="title screen thing0"> 
-        <%= document.title %>
-      </h1>
-      <div class="screen thing1">
-        <div class="copy">
-          <%= document.body %>
-        </div>
+    <div id="landing">
+      <div id="index">
+        <ul>
+        <% @documents.each do |document| %>
+          <li>
+            <span class="list-category">Category</span>
+            <a href="#article-<%= document.id %>">
+              <%= document.title %>
+            </a>
+            <span class="list-tags">tags goes here</span>            
+          </li>
+        <% end %>
+          <li>
+            + <%= link_to 'New Document', new_document_path %>
+          </li>
+        </ul>
       </div>
-      <div class="views">
-          <div class="links">
-            <%= document.view_count %>
-            <%= link_to 'PDF', "/documents/#{document.id}.pdf" %>
-            <%= link_to 'Edit', edit_document_path(document) %>
-            <%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+
+      <div id="items">
+
+      <% @documents.each do |document| %>
+
+        <article class="item" id="article-<%= document.id %>">
+          <div class="close">back to list</div>
+          
+          <div class="forward">&rarr;<div class="next-title"></div></div>
+          <div class="backward">&larr;<div class="prev-title"></div></div>
+          
+          <div class="content">
+            <h1 class="title"> 
+              <%= document.title %>
+            </h1>
+            <div class="category">Put Category Here</div>
+            <div class="copy">
+              <%= document.body %>
+            </div>
+
+            <ul class="tags">
+              <li>
+                a list of tags
+              </li>
+              <li>
+                a list of tags
+              </li>
+              <li>
+                a list of tags
+              </li>
+            </ul>
+        
+            <div class="clear">&nbsp;</div>
+            
+            <div class="image-holder">
+
+            </div>
+
+            <div class="views">
+                <div class="links">
+                  <%= document.view_count %>
+                  <%= link_to 'PDF', "/documents/#{document.id}.pdf" %>
+                  <%= link_to 'Edit', edit_document_path(document) %>
+                  <%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </div>
+            <div>
           </div>
-      <div>
+          <div class="clear">&nbsp;</div>
+        </article>
+
+      <% end %>
+
+      </div>
+    </div>
+
+    <div id="about">
+    </div>
+
+    <div id="archive">
+    </div>
+
+    <div id="shop">
 
     </div>
-  </article>
-<% end %>
+  </div>
 </div>
-
-<br />
-
-<%= link_to 'New Document', new_document_path %>
-<br />
-
-<br />
-
-<br />
-
