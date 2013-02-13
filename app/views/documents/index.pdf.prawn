@@ -37,6 +37,7 @@ p.fill_color "000000"
       :rotate_around => :center
   end
 
+  #body
   p.font_size 12
   if document.body
     p.text_box document.body,
@@ -47,7 +48,7 @@ p.fill_color "000000"
                :rotate_around => :center
   end
 
-
+  #image
   p.move_down( y_position - 232 )
   p.image Rails.root.join('app', 'assets', 'images', 'weed_cat.jpg'), :width => 268, :height => 176
 
