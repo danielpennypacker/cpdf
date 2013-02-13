@@ -1,31 +1,57 @@
-prawn_document(:margin => [27,9,27,45], :page_size => [612, 792]) do |pdf|
-  @documents.each do | document |
+
+prawn_document(:page_size => [ 392, 612]) do |p|
+
+p.font "Helvetica"
+p.fill_color "000000"
+
+@documents.each do | document |
 
   #opacity square
-  pdf.transparent( (document.view_count%50).to_f/100) do
-    pdf.rectangle [-45, 792], 612, 818
-    pdf.fill
+  p.transparent( (document.view_count%50).to_f/100) do
+    p.rectangle [-45, 792], 612, 818
+    p.fill
   end
 
-  #text
-  pdf.fill_color "000000"
-  pdf.text document.title
-  pdf.text "view count: #{document.view_count.to_s}"
+
+  #big letter
+  p.font_size 42
+  p.text document.title[0], :style => :bold
 
 
-  pdf.text_box document.body,
-  :at => [100, 250],
-  :height => 100,
-  :width => 100,
-  :rotate => 90, 
-  :rotate_around => :center
+  #little letter
 
 
-  pdf.text "opacity: #{(document.view_count%50).to_f/100}"
-  pdf.move_down 20
+  #title
+  p.font_size 14
+  p.text document.title, :style => :bold
+
+  y_position = p.cursor - 40
+
+  #tag list
+  p.font_size 8
+  if document.tags
+    p.text_box document.tags,
+      :at => [0, y_position],
+      :width => 39,
+      :align => :right,
+      :rotate_around => :center
+  end
+
+  p.font_size 12
+  if document.body
+    p.text_box document.body,
+               :at => [50, y_position],
+               :width => 268,
+               :height => 232,
+               :align => :left,
+               :rotate_around => :center
+  end
 
 
-  pdf.text document.body
+  p.move_down( y_position - 232 )
+  p.image Rails.root.join('app', 'assets', 'images', 'weed_cat.jpg'), :width => 268, :height => 176
+
+  p.start_new_page
 
 end
 
