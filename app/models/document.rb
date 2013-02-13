@@ -1,3 +1,5 @@
 class Document < ActiveRecord::Base
-  attr_accessible :body, :title, :view_count
+  attr_accessible :body, :title, :view_count, :tags
+
+
 end
