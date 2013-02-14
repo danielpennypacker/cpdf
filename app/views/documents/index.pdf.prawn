@@ -3,6 +3,21 @@ prawn_document(:page_size => [ 392, 612], :margin => [ 37, 55, 37, 55]) do |p|
 p.font "Helvetica"
 p.fill_color "000000"
 
+
+
+
+page = 2
+
+p.text "Contents"
+@documents.each do | document |
+  p.text document.title, :style => :bold
+  page = page + 1
+  p.text page.to_s  
+end
+
+p.start_new_page
+
+
 @documents.each do | document |
 
   #opacity square
@@ -15,7 +30,7 @@ p.fill_color "000000"
   p.repeat(:odd) do
     p.font_size 6  
     p.draw_text "Source Book • Volume 1", 
-    :at => [340,311],
+    :at => [320,311],
     :width => 100,
     :rotate => 270, 
     :rotate_around => :center
@@ -62,6 +77,6 @@ p.fill_color "000000"
 
   p.start_new_page
 
-end
+  end
 
 end
