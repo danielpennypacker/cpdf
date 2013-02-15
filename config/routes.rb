@@ -1,5 +1,8 @@
 Cpdf::Application.routes.draw do
 
+  resources :issues
+
+
   root :to => 'documents#index'
 
   resources :documents

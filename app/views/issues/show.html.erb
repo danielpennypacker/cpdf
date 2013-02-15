@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>View count:</b>
+  <%= @issue.view_count %>
+</p>
+
+<p>
+  <b>Covers:</b>
+  <%= @issue.covers %>
+</p>
+
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>
