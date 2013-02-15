@@ -3,6 +3,9 @@ prawn_document(:page_size => [ 392, 612], :margin => [ 37, 55, 37, 55]) do |p|
 #p.font "Helvetica"
 p.fill_color "000000"
 
+#cover image
+image_number = (@issue.view_count%10)
+p.image Rails.root.join('app', 'assets', 'images', 'issues', "#{image_number}.jpg"), :fit => [392, 612]
 
 p.font_families.update("Maison-Book" => {
 :normal => "#{Rails.root}/app/assets/fonts/MaisonNeue-Mono.otf"
@@ -10,7 +13,7 @@ p.font_families.update("Maison-Book" => {
 
 #p.font("Maison-Book")
 
-p.image Rails.root.join('app', 'assets', 'images', 'cover-01.png'), :at => [-55, 575], :fit => [392, 612]
+#p.image Rails.root.join('app', 'assets', 'images', 'cover-01.png'), :at => [-55, 575], :fit => [392, 612]
 
 
 p.start_new_page
@@ -21,10 +24,13 @@ p.fill_color "000000"
 p.rectangle [-55, 575], 392, 612
 p.fill
 
+p.start_new_page
+
 p.fill_color "ffffff"
 
 page = 2
 p.text "Contents"
+page = 2
 @documents.each do | document |
   page = page + 1
   p.text page.to_s  
@@ -65,10 +71,16 @@ p.start_new_page
 
 p.fill_color "000000"
 
-@documents.each do | document |
+#used
+letter_count = 1
+
+#for printing out the page number
+page = 2
+@documents.each_with_index do | document, index |
+  page = page + 1
 
   #opacity square
-  p.transparent( (document.view_count%50).to_f/100) do
+  p.transparent( (@issue.view_count%50).to_f/100) do
     p.rectangle [-55, 575], 392, 612
     p.fill
   end
@@ -87,15 +99,39 @@ p.fill_color "000000"
   p.font_size 40
   p.text document.title[0], :style => :bold
 
+  #code for keeping track of little number next to letter
+  if index != 0
+    prev_letter = @documents[index -1].title[0]
+    if prev_letter == document.title[0]
+      letter_count += 1
+    else
+      letter_count = 1
+    end
+  end
 
-  #little letter
-
+  p.font_size 20
+  #little number
+  p.text_box letter_count.to_s,
+             :at => [10, p.cursor + 40 ],
+             :width => 39,
+             :height => 50,
+             :align => :right
 
   #title
   p.font_size 12
   p.text document.title, :style => :bold
 
   y_position = p.cursor - 70
+
+  #page number
+  p.font_size 5
+  num = "%02d" % page
+  num = num[0] + "\n" + num[1]
+  p.text_box num,
+             :at => [-60, y_position],
+             :width => 39,
+             :height => 50,
+             :align => :right
 
   #tag list
   p.font_size 5
@@ -120,7 +156,9 @@ p.fill_color "000000"
 
   #image
   p.move_down( y_position - 106 )
-  p.image Rails.root.join('app', 'assets', 'images', 'weed_cat.jpg'), :fit => [268, 176]
+  if document.image_name
+    p.image Rails.root.join('app', 'assets', 'images', 'documents', document.image_name), :fit => [268, 176]
+  end
 
   p.start_new_page
 

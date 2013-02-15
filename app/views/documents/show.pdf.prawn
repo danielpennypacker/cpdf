@@ -1,7 +1,5 @@
 require "prawn/measurement_extensions"
 
-
-
 prawn_document(:margin => [27,9,27,45], :page_size => [612, 792]) do |pdf|
 
   #opacity square
@@ -23,10 +21,8 @@ prawn_document(:margin => [27,9,27,45], :page_size => [612, 792]) do |pdf|
   :rotate => 90, 
   :rotate_around => :center
 
-
   pdf.text "opacity: #{(@document.view_count%50).to_f/100}"
   pdf.move_down 20
-
 
   pdf.text @document.body
 

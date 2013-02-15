@@ -2,6 +2,11 @@ class DocumentsController < ApplicationController
   # GET /documents
   # GET /documents.json
   def index
+
+    @issue = Issue.first
+    @issue.view_count += 1
+    @issue.save
+
     @documents = Document.all( :order => :title)
 
     respond_to do |format|

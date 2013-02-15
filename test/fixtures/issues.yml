@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  view_count: 1
+  covers: MyText
+
+two:
+  view_count: 1
+  covers: MyText
