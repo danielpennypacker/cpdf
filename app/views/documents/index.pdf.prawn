@@ -5,7 +5,7 @@ p.fill_color "000000"
 
 #cover image
 image_number = (@issue.view_count%10)
-p.image Rails.root.join('app', 'assets', 'images', 'issues', "#{image_number}.jpg"), :fit => [392, 612]
+p.image Rails.root.join('app', 'assets', 'images', 'issues', "#{image_number}.jpg"), :at => [-55, 575], :fit => [392, 612]
 
 p.font_families.update("Maison-Book" => {
 :normal => "#{Rails.root}/app/assets/fonts/MaisonNeue-Mono.otf"
@@ -13,18 +13,12 @@ p.font_families.update("Maison-Book" => {
 
 #p.font("Maison-Book")
 
-#p.image Rails.root.join('app', 'assets', 'images', 'cover-01.png'), :at => [-55, 575], :fit => [392, 612]
-
-
 p.start_new_page
 
 #TOC
-
 p.fill_color "000000"
 p.rectangle [-55, 575], 392, 612
 p.fill
-
-p.start_new_page
 
 p.fill_color "ffffff"
 
@@ -66,7 +60,6 @@ p.draw_text "Source Book • Volume 1",
 :rotate => 270, 
 :rotate_around => :center
 
-
 p.start_new_page
 
 p.fill_color "000000"
@@ -95,6 +88,23 @@ page = 2
     :rotate_around => :center
   end
 
+  #page number
+  p.font_size 6
+  num = "%02d" % page
+  num = num[0] + "\n" + num[1]
+  p.text_box num,
+             :at => [-60, 537],
+             :width => 39,
+             :height => 50,
+             :align => :right  
+
+  #line above big letter
+  p.line [0, 540], [88, 540]
+  p.stroke
+  
+
+  p.move_down 5
+
   #big letter
   p.font_size 40
   p.text document.title[0], :style => :bold
@@ -109,13 +119,15 @@ page = 2
     end
   end
 
-  p.font_size 20
+  p.font_size 16
   #little number
   p.text_box letter_count.to_s,
-             :at => [10, p.cursor + 40 ],
-             :width => 39,
-             :height => 50,
-             :align => :right
+   :at => [0, p.cursor + 47 ],
+   :width => 39,
+   :height => 50,
+   :align => :right
+
+  p.move_up 10
 
   #title
   p.font_size 12
@@ -123,15 +135,6 @@ page = 2
 
   y_position = p.cursor - 70
 
-  #page number
-  p.font_size 5
-  num = "%02d" % page
-  num = num[0] + "\n" + num[1]
-  p.text_box num,
-             :at => [-60, y_position],
-             :width => 39,
-             :height => 50,
-             :align => :right
 
   #tag list
   p.font_size 5
@@ -143,8 +146,12 @@ page = 2
       :rotate_around => :center
   end
 
+
+  p.line [50, y_position+5], [60, y_position+5]
+  p.stroke
+
   #body
-  p.font_size 8
+  p.font_size 7
   if document.body
     p.text_box document.body,
        :at => [50, y_position],
@@ -155,9 +162,9 @@ page = 2
   end
 
   #image
-  p.move_down( y_position - 106 )
+  p.move_down( y_position - 116 )
   if document.image_name
-    p.image Rails.root.join('app', 'assets', 'images', 'documents', document.image_name), :fit => [268, 176]
+    p.image Rails.root.join('app', 'assets', 'images', 'documents', document.image_name), :fit => [288, 176]
   end
 
   p.start_new_page
