@@ -1,9 +1,9 @@
 <div id="header">
   <ul>
     <li>
-      <h2><a title="landing" id="logo">Source Book</a></h2>
+      <h2><a title="landing" id="logo">BookBook</a></h2>
     </li>      
-    <li id="volume">&bull; Volume One</li>
+    <li id="volume">&bull; 1st Edition</li>
     <li>
       <a title="about">
         About
@@ -15,10 +15,11 @@
       </a>
     </li>
     <li id="order">
-        1st edition, # of 50 <a title="shop">Order Now</a>
+        # of 50 <a title="shop">Publish</a>
     </li>
   </ul>
 </div>
+
 <div id="site-container">
   <div id="page-container">
 
@@ -91,29 +92,71 @@
     </div>
 
     <div id="about">
+      <div id="desc">
+        <p>
+          <span class="underline">BookBook</span> is an up-to-date graphic design reference book. The printed issue acts as a snapshot of this digital archive, and is compiled, instantly, on demand. Published in a limited edition of 50 copies.
+        </p>
+        <p>
+          This x itteration contains x references.
+        </p>
+      </div>
     </div>
 
     <div id="archive">
       <ul id="covers">
         <li>
-            <img src="#{Rails.root}/app/assets/cover-01.png" />
-            1st edition, #1
+            <img src="/images/issues-small/1.jpg" />          
+            <span class="issue-edition">1st edition, 1/50</span>
         </li>
         <li>
-            <img src="" />
-            1st edition, #2
+            <img src="/images/issues-small/2.jpg" />                    
+            <span class="issue-edition">1st edition, 3/50</span>
         </li>
         <li>
-            <img src="" />
-            1st edition, #3
+            <img src="/images/issues-small/3.jpg" />              
+            <span class="issue-edition">1st edition, 3/50</span>
         </li>
-        <li>
-            <img src="" />
-            1st edition, #4
-        </li>                        
+
     </div>
 
     <div id="shop">
+
+      <img src="/images/issues-large/1.jpg" />          
+      <img src="/images/issues-large/2.jpg" />          
+      
+      <div id="order-desc">
+
+        <ul>
+          <li>
+            <b>Pages</b> 24 p.
+          </li>
+          <li>          
+            <b>Dimensions</b> 5.5 x 8.5 in
+          </li>
+          <li>                
+            <b>Cover</b> Paperback
+          </li>
+          <li>                  
+            <b>Binding</b> Stapled
+          </li>
+          <li>                  
+            <b>Process</b> Laser-printed
+          </li>
+          <li>                   
+            <b>Color</b> B&amp;W
+          </li>
+          <li>            
+            <b>Edition</b> 4/50
+          </li>  
+        </ul>
+        <div id="button">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="8EB6HFD5SCXH8">
+          <input type="image" src="/images/button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </div>
 
     </div>
   </div>

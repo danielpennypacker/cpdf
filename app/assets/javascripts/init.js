@@ -106,4 +106,15 @@ $(document).ready(function(){
 	
 	});
 
+
+	//show order desc
+
+	$("#order a").click(function() {
+		$("#order-desc").addClass("show");
+	})	
+
+	$("header a").click(function() {
+		$("#order-desc").removeClass("show");
+	})	
+
 });
