@@ -191,7 +191,7 @@ page = 2
   #image
   p.move_down( y_position - 116 )
   if document.image_name
-  #  p.image Rails.root.join('app', 'assets', 'images', 'documents', document.image_name), :fit => [288, 176]
+    p.image Rails.root.join('app', 'assets', 'images', 'documents', document.image_name), :fit => [288, 176]
   end
 
   p.start_new_page
