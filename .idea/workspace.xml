@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0f72309-666d-4c67-b27a-deb88dd8255b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/document.rb" afterPath="$PROJECT_DIR$/app/models/document.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/documents/index.pdf.prawn" afterPath="$PROJECT_DIR$/app/views/documents/index.pdf.prawn" />
     </list>
     <ignored path="cpdf.iws" />
@@ -25,19 +24,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.pdf.prawn" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.pdf.prawn" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/documents/index.pdf.prawn">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="193" column="2" selection-start="4945" selection-end="4945" vertical-scroll-proportion="-178.15384">
+            <state line="192" column="56" selection-start="4974" selection-end="4974" vertical-scroll-proportion="0.42857143">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="document.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/document.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="75" selection-start="111" selection-end="111" vertical-scroll-proportion="0.03827751">
+            <state line="1" column="75" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,8 +144,8 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/db/migrate/20130217204626_addcategory.rb" />
         <option value="$PROJECT_DIR$/app/views/documents/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/documents/index.pdf.prawn" />
         <option value="$PROJECT_DIR$/app/models/document.rb" />
+        <option value="$PROJECT_DIR$/app/views/documents/index.pdf.prawn" />
       </list>
     </option>
   </component>
@@ -917,16 +916,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/documents/index.pdf.prawn">
+    <entry file="file://$PROJECT_DIR$/app/models/document.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="193" column="2" selection-start="4945" selection-end="4945" vertical-scroll-proportion="-178.15384">
+        <state line="1" column="75" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/document.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/documents/index.pdf.prawn">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="75" selection-start="111" selection-end="111" vertical-scroll-proportion="0.03827751">
+        <state line="192" column="56" selection-start="4974" selection-end="4974" vertical-scroll-proportion="0.42857143">
           <folding />
         </state>
       </provider>

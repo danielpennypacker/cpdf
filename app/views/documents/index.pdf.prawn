@@ -190,7 +190,7 @@ page = 2
 
   #image
   p.move_down( y_position - 116 )
-  if document.image_name
+  if document.image_name and !document.image_name.empty?
     p.image Rails.root.join('app', 'assets', 'images', 'documents', document.image_name), :fit => [288, 176]
   end
 
