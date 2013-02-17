@@ -167,15 +167,16 @@ page = 2
   p.stroke
 
   #category
-  p.font_size 6
-  p.text_box "CATEGORY", 
-     :at => [50, y_position],
-     :width => 238,
-     :height => 10,
-     :align => :left,
-     :style => :bold,
-     :character_spacing => 0.5
-
+  if document.category
+    p.font_size 6
+    p.text_box document.category,
+       :at => [50, y_position],
+       :width => 238,
+       :height => 10,
+       :align => :left,
+       :style => :bold,
+       :character_spacing => 0.5
+  end
   #body
   p.font_size 7
   if document.body
