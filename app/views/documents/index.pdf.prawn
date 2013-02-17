@@ -66,10 +66,6 @@ This 23rd printed itteration contains 16 references, in 16 pages. It was created
 This 23rd printed itteration contains 16 references, in 16 pages. It was created for the Winter 2012 Thesis Research workshop with Leonardo Sonnoli. Quotes describing references are set in Arhem, my notes on the subject are set in Aperçu.", :at => [50, p.cursor], :leading => 2
 
 p.start_new_page
-
-#blank page
-p.start_new_page
-
 p.fill_color "000000"
 
 #used
@@ -111,7 +107,7 @@ page = 2
     page_num_y = 537
   else
     #odd
-    page_num_x = 160
+    page_num_x = 282
     page_num_y = 537
   end
 
@@ -208,7 +204,6 @@ page = 2
   end
 
   p.start_new_page
-
   end
 
 end
