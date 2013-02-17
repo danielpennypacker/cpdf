@@ -77,6 +77,10 @@ body {
 	cursor: pointer;
 }
 
+#header li a#logo:hover {
+	color: yellow;
+}
+
 #header li#order {
 	float: right;
 	margin-right: 40px;
@@ -84,6 +88,7 @@ body {
 
 #header li#order a {
 	background: yellow;
+	padding-right: 15px;
 }
 
 
@@ -97,9 +102,9 @@ body {
 }
 
 #index ul{
-	font-size: 14px;
+	font-size: 16px;
 	list-style-type: none;
-	line-height: 30px;
+	line-height: 32px;
 }
 
 #index ul li {
@@ -124,7 +129,7 @@ body {
 
 .list-category {
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: .05em;
 	font-size: 12px;
 	width: 90px;
 	display: block;
@@ -289,7 +294,6 @@ article {
 	background: black;
 	color: white;
 	text-align: left;
-
 	display: none;
 }
 
@@ -301,9 +305,70 @@ article {
 	left: 0px;
 }
 
+/* about */
+
+#about #desc {
+	padding: 100px 40px;
+}
+
+#about p {
+	width: 80%;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 15px;
+
+	font-weight: 500;
+
+}
+
+/* archive */
+
+#covers {
+	padding: 100px 35px;
+}
+
+#covers li {
+	width: 182px;
+	height: 265px;
+	background: url(/images/issues-small/1.jpg) top left no-repeat;
+	display: block;
+	float: left;
+	margin: 10px;
+	font-size: 11px;
+}
+
+.issue-edition {
+	padding: 0px 15px;
+}
+
+/* order page */
+
+#order-desc {
+	position: fixed;
+	top: 100px;
+	right: 20px;
+	width: 170px;
+
+	font-size: 8px;
+
+	display: none;
+}
+
+#order-desc li{
+	list-style-type: none;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+#button {
+	margin-left: -10px;
+}
+
+/* useful */
+
+
 .clear {clear: both;}
 
-
 .show {
-	display: block;
+	display: block !important;
 }
