@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
 	function getWindowSize () {
-		$windowHeight = $(window).height();
+		$documentHeight = $(document).height();
 		$windowWidth = $(window).width();
 		$pagesWidth = $(window).width()*5;
 
@@ -15,17 +15,10 @@ $(document).ready(function(){
 		$("#landing").width($windowWidth+"px");		
 		$("#shop").width($windowWidth+"px");		
 
-
-		$("#about").css("min-height", $windowHeight+"px");		
-		$("#archive").css("min-height", $windowHeight+"px");
-		$("#landing").css("min-height", $windowHeight+"px");		
-		$("#shop").css("min-height", $windowHeight+"px");
-
-		
-		//$("article").height($windowHeight+"px");		
-		// $(".screen").height($windowHeight+"px");		
-		// $(".screen").width($windowWidth+"px");		
-		// $(".title").css("line-height",$windowHeight+"px")
+		$("#about").css("min-height", $documentHeight+"px");		
+		$("#archive").css("min-height", $documentHeight+"px");		
+		$("#landing").css("min-height", $documentHeight+"px");		
+		$("#shop").css("min-height", $documentHeight+"px");	
 
 
 	}
