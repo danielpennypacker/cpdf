@@ -99,11 +99,24 @@ page = 2
 
   #page number
   p.font_size 6
-  num = "%02d" % page
-  num = num[0] + "\n" + num[1]
 
-  p.text_box num,
-    :at => [-60, 537],
+  #format page number to stack
+  formatted_page = "%02d" % page
+  formatted_page = formatted_page[0] + "\n" + formatted_page[1]
+
+  #decide if page number is odd of even
+  if page%2 == 0
+    #even
+    page_num_x = -60
+    page_num_y = 537
+  else
+    #odd
+    page_num_x = 160
+    page_num_y = 537
+  end
+
+  p.text_box formatted_page,
+    :at => [page_num_x, page_num_y],
     :width => 59,
     :height => 50,
     :align => :center,

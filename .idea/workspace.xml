@@ -27,7 +27,7 @@
       <file leaf-file-name="index.pdf.prawn" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/documents/index.pdf.prawn">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="192" column="56" selection-start="4974" selection-end="4974" vertical-scroll-proportion="0.42857143">
+            <state line="113" column="18" selection-start="3461" selection-end="3461" vertical-scroll-proportion="0.5102041">
               <folding />
             </state>
           </provider>
@@ -925,7 +925,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/documents/index.pdf.prawn">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="56" selection-start="4974" selection-end="4974" vertical-scroll-proportion="0.42857143">
+        <state line="113" column="18" selection-start="3461" selection-end="3461" vertical-scroll-proportion="0.5102041">
           <folding />
         </state>
       </provider>
