@@ -4,10 +4,8 @@ prawn_document(:page_size => [ 392, 612], :margin => [ 37, 55, 37, 55]) do |p|
 p.fill_color "000000"
 
 #cover image
-
-issue_number = @issue.view_count%50
-
-p.image Rails.root.join('app', 'assets', 'images', 'issues', "#{issue_number}.jpg"), :at => [-55, 575], :fit => [392, 600]
+image_number = (@issue.view_count%10)
+p.image Rails.root.join('app', 'assets', 'images', 'issues', "#{image_number}.jpg"), :at => [-55, 575], :width => 392, :height => 612
 
 p.font_families.update("Maison" => {
 :normal => "#{Rails.root}/app/assets/fonts/maisonneuebook.ttf",
@@ -32,7 +30,7 @@ p.fill_color "ffffff"
 
 p.font_size 7
 
-page = 2
+page = 1
 p.text "Contents", :style => :bold
 
 p.move_down 5
@@ -67,20 +65,21 @@ This 23rd printed itteration contains 16 references, in 16 pages. It was created
 
 This 23rd printed itteration contains 16 references, in 16 pages. It was created for the Winter 2012 Thesis Research workshop with Leonardo Sonnoli. Quotes describing references are set in Arhem, my notes on the subject are set in Aperçu.", :at => [50, p.cursor], :leading => 2
 
-p.start_new_page
-p.fill_color "000000"
 
+p.start_new_page
+
+p.fill_color "000000"
 
 #used
 letter_count = 1
 
 #for printing out the page number
-page = 2
+page = 1
 @documents.each_with_index do | document, index |
   page = page + 1
 
   #opacity square
-  p.transparent( (issue_number).to_f/100) do
+  p.transparent( (@issue.view_count%50).to_f/100) do
     p.rectangle [-55, 575], 392, 612
     p.fill
   end
@@ -88,7 +87,7 @@ page = 2
   #running side
   p.repeat(:odd) do
     p.font_size 6  
-    p.draw_text "1st Edition, #{issue_number}/50",
+    p.draw_text "1st Edition, #{image_number}/50", 
     :at => [310,311],
     :width => 100,
     :rotate => 270,

@@ -1,13 +1,19 @@
 * {
 	margin: 0px;
 	padding: 0px;
-	font-family: "Maison Neue", helvetica !important;	
+	font-family:"Maison Neue Book", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:300; 
+	font-style:normal;	
 }
 
 body {
-	font-family: "Maison Neue", helvetica !important;
-}
+	font-family:"Maison Neue Book", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:300; 
+	font-style:normal;	
 
+}
 /* different panes */
 
 #site-container {
@@ -53,6 +59,10 @@ body {
 
 #header li h2 a, #volume {
 	font-size: 16px;
+	font-family:"Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:900; 
+	font-style:normal;		
 }
 
 #header li h2 a{
@@ -112,9 +122,12 @@ body {
 }
 
 #index ul a{
-	color: black;
-	font-weight: bold;
+	font-family:"Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:900; 
+	font-style:normal;	
 
+	color: black;
 	padding-left: 3px;
 	padding-right: 3px;
 
@@ -205,7 +218,11 @@ article {
 	margin-top: 20px;
 	text-transform: uppercase;
 	letter-spacing: .05em;
-	font-weight: bold;
+
+	font-family:"Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:900; 
+	font-style:normal;	
 }
 
 .copy {
@@ -215,7 +232,10 @@ article {
 	width: 800px;
 	float: left;
 
-	font-weight: 100;	
+	font-family:"Maison Neue Mono", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:300; 
+	font-style:normal;	
 
 	-moz-column-count:2; /* Firefox */
 	-webkit-column-count:2; /* Safari and Chrome */
@@ -233,8 +253,6 @@ article {
 	width: 100px;
 	margin: 20px 20px 40px 20px;	
 	float: left;
-
-	font-weight: normal;
 
 	font-size: 10px;
 }
@@ -317,7 +335,10 @@ article {
 	line-height: 24px;
 	margin-bottom: 15px;
 
-	font-weight: 500;
+	font-family:"Maison Neue Book", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:300; 
+	font-style:normal;	
 
 }
 
@@ -374,16 +395,30 @@ article {
 	font-size: 8px;
 
 	display: none;
+
+	margin-bottom: 10px;
 }
 
 #order-desc li{
 	list-style-type: none;
 	margin-bottom: 5px;
-	font-weight: 500;
+}
+
+#download {
+	margin-top: 10px;
+}
+
+#download a:hover {
+	background: transparent;
+}
+
+.description {
+	margin: 0px 5px 10px 0px;
+	font-size: 12px;
 }
 
 #button {
-	margin-left: -10px;
+	margin-left: 0px;
 }
 
 /* useful */
