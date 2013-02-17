@@ -7,7 +7,7 @@ p.fill_color "000000"
 
 issue_number = @issue.view_count%50
 
-p.image Rails.root.join('app', 'assets', 'images', 'issues', "#{issue_number}.jpg"), :at => [-55, 575], :fit => [392, 612]
+p.image Rails.root.join('app', 'assets', 'images', 'issues', "#{issue_number}.jpg"), :at => [-55, 575], :fit => [392, 600]
 
 p.font_families.update("Maison" => {
 :normal => "#{Rails.root}/app/assets/fonts/maisonneuebook.ttf",
