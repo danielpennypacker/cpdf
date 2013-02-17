@@ -335,6 +335,13 @@ article {
 	float: left;
 	margin: 10px;
 	font-size: 11px;
+	text-align: center;
+}
+
+#covers li img{
+	width: 132px;
+	margin: 20px;
+	height: auto;
 }
 
 .issue-edition {
