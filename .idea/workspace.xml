@@ -2,59 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0f72309-666d-4c67-b27a-deb88dd8255b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/22.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/23.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/24.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/25.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/26.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/27.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/28.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/29.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/30.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/31.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/33.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/34.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/35.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/36.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/37.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/38.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/39.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/41.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/43.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/44.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/45.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/46.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/47.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/48.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/49.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/9.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/issues-large/2.jpg" afterPath="$PROJECT_DIR$/public/images/issues-large/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/main.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/documents/index.html.erb" afterPath="$PROJECT_DIR$/app/views/documents/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/documents/index.pdf.prawn" afterPath="$PROJECT_DIR$/app/views/documents/index.pdf.prawn" />
     </list>
     <ignored path="cpdf.iws" />
@@ -80,7 +28,16 @@
       <file leaf-file-name="index.pdf.prawn" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/documents/index.pdf.prawn">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="0" selection-start="5503" selection-end="5503" vertical-scroll-proportion="0.63265306">
+            <state line="90" column="39" selection-start="2986" selection-end="2986" vertical-scroll-proportion="0.3327869">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="52" selection-end="185" vertical-scroll-proportion="-2.909091">
               <folding />
             </state>
           </provider>
@@ -126,15 +83,6 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/documents_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="20" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="9" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -291,39 +239,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,104 +280,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="documents" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -810,7 +636,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17547892" sideWeight="0.87535816" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14329502" sideWeight="0.87535816" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.124641836" sideWeight="0.36475095" order="10" side_tool="true" content_ui="tabs" />
@@ -879,11 +705,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130213061922_add_rows.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="53" selection-end="93" vertical-scroll-proportion="0.07153502" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130202212229_create_documents.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="14" selection-start="196" selection-end="196" vertical-scroll-proportion="0.3219076" />
@@ -976,9 +797,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="52" selection-end="185" vertical-scroll-proportion="-2.909091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/documents/index.pdf.prawn">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="0" selection-start="5503" selection-end="5503" vertical-scroll-proportion="0.63265306">
+        <state line="90" column="39" selection-start="2986" selection-end="2986" vertical-scroll-proportion="0.3327869">
           <folding />
         </state>
       </provider>
