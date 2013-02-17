@@ -67,10 +67,7 @@ This 23rd printed itteration contains 16 references, in 16 pages. It was created
 
 p.start_new_page
 
-#blank page
-p.start_new_page
-
-p.fill_color "000000"
+  p.fill_color "000000"
 
 #used
 letter_count = 1
@@ -207,7 +204,9 @@ page = 2
     p.image Rails.root.join('app', 'assets', 'images', 'documents', document.image_name), :fit => [288, 176]
   end
 
-  p.start_new_page
+    if index != ( @documents.length - 1)
+      p.start_new_page
+    end
 
   end
 
