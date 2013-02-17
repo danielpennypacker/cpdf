@@ -66,8 +66,12 @@ This 23rd printed itteration contains 16 references, in 16 pages. It was created
 This 23rd printed itteration contains 16 references, in 16 pages. It was created for the Winter 2012 Thesis Research workshop with Leonardo Sonnoli. Quotes describing references are set in Arhem, my notes on the subject are set in Aperçu.", :at => [50, p.cursor], :leading => 2
 
 p.start_new_page
+<<<<<<< HEAD
 
   p.fill_color "000000"
+=======
+p.fill_color "000000"
+>>>>>>> 6c26741a9a9bcca2a78967f77282d168c23a3033
 
 #used
 letter_count = 1
@@ -108,7 +112,7 @@ page = 2
     page_num_y = 537
   else
     #odd
-    page_num_x = 160
+    page_num_x = 282
     page_num_y = 537
   end
 
@@ -203,6 +207,7 @@ page = 2
   if document.image_name and !document.image_name.empty?
     p.image Rails.root.join('app', 'assets', 'images', 'documents', document.image_name), :fit => [288, 176]
   end
+
 
     if index != ( @documents.length - 1)
       p.start_new_page
