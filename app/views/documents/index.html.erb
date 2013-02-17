@@ -29,7 +29,7 @@
         <ul>
         <% @documents.each do |document| %>
           <li>
-            <span class="list-category">Category</span>
+            <span class="list-category"><%= document.category %></span>
             <a href="#article-<%= document.id %>">
               <%= document.title %>
             </a>
@@ -57,7 +57,7 @@
             <h1 class="title"> 
               <%= document.title %>
             </h1>
-            <div class="category">Put Category Here</div>
+            <div class="category"><%= document.category %></div>
             <div class="copy">
               <%= document.body %>
             </div>
@@ -105,16 +105,8 @@
     <div id="archive">
       <ul id="covers">
         <li>
-            <img src="/images/issues-small/1.jpg" />          
+            <img src="/images/issues-small/1.png" />          
             <span class="issue-edition">1st edition, 1/50</span>
-        </li>
-        <li>
-            <img src="/images/issues-small/2.jpg" />                    
-            <span class="issue-edition">1st edition, 3/50</span>
-        </li>
-        <li>
-            <img src="/images/issues-small/3.jpg" />              
-            <span class="issue-edition">1st edition, 3/50</span>
         </li>
 
     </div>
