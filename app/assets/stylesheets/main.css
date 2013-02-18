@@ -48,6 +48,11 @@ body {
 	padding: 40px 0px;
 
 	z-index: 1000000;
+
+	font-family:"Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:900; 
+	font-style:normal;		
 }
 
 #header h2, #header div, #header ul, #header li {
@@ -212,6 +217,11 @@ article {
 	line-height: 80px;
 	text-align: left;
 	width: 800px;
+
+	font-family:"Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:900; 
+	font-style:normal;		
 }
 
 .category {
@@ -264,9 +274,11 @@ article {
 
 .image-holder {
 	margin: 20px 0px 0px 0px;	
-	background: #ddd;
-	height: 400px;
+}
+
+.image-holder img{
 	width: 600px;
+	height: auto;
 }
 
 .views {

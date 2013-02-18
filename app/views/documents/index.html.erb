@@ -15,7 +15,7 @@
       </a>
     </li>
     <li id="order">
-        <%= @issue.nice_count %> of 50 <a title="shop">Publish</a>
+        Number <%= @issue.nice_count %> of 50 <a title="shop">Publish</a>
     </li>
   </ul>
 </div>
@@ -36,9 +36,9 @@
             <span class="list-tags"><%= document.tags %></span>            
           </li>
         <% end %>
-          <li>
+          <!--li>
             + <%= link_to 'New Document', new_document_path %>
-          </li>
+          </li-->
         </ul>
       </div>
 
@@ -78,7 +78,7 @@
 
             <div class="views">
                 <div class="links">
-                  <%= document.view_count %>
+                  <!--%= document.view_count %-->
                   <!--<%= link_to 'PDF', "/documents/#{document.id}.pdf" %>-->
                   <!--<%= link_to 'Edit', edit_document_path(document) %>-->
                   <!--<%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %>-->
@@ -127,20 +127,11 @@
           <li>          
             <b>Dimensions</b> 5.5 x 8.5 in
           </li>
-          <li>                
-            <b>Cover</b> Paperback
-          </li>
-          <li>                  
-            <b>Binding</b> Stapled
-          </li>
-          <li>                  
-            <b>Process</b> Laser-printed
-          </li>
           <li>                   
             <b>Color</b> B&amp;W
           </li>
           <li>            
-            <b>Edition</b> 4/50
+            <b>Edition</b> <%= (@issue.nice_count + 1)%50 %>/50
           </li>  
         </ul>
         <div id="download">
