@@ -71,15 +71,17 @@
             <div class="clear">&nbsp;</div>
             
             <div class="image-holder">
-
+              <% if document.image_name && !document.image_name.empty? %>
+                <%= image_tag "/assets/documents/#{document.image_name}" %>
+              <% end %>
             </div>
 
             <div class="views">
                 <div class="links">
                   <%= document.view_count %>
-                  <%= link_to 'PDF', "/documents/#{document.id}.pdf" %>
-                  <%= link_to 'Edit', edit_document_path(document) %>
-                  <%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %>
+                  <!--<%= link_to 'PDF', "/documents/#{document.id}.pdf" %>-->
+                  <!--<%= link_to 'Edit', edit_document_path(document) %>-->
+                  <!--<%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %>-->
                 </div>
             <div>
           </div>
