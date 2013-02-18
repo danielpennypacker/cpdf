@@ -242,7 +242,7 @@ article {
 	width: 800px;
 	float: left;
 
-	font-family:"Maison Neue Mono", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-family:"Maison Neue Book", Helvetica, Arial, Sans-Serif, sans-serif !important; 
 	font-size-adjust:0,75; 
 	font-weight:300; 
 	font-style:normal;	
@@ -263,6 +263,12 @@ article {
 	width: 100px;
 	margin: 20px 20px 40px 20px;	
 	float: left;
+
+
+	font-family:"Maison Neue Mono", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:300; 
+	font-style:normal;	
 
 	font-size: 10px;
 }
