@@ -4,8 +4,10 @@ class DocumentsController < ApplicationController
   def index
 
     @issue = Issue.first
-    @issue.view_count += 1
-    @issue.save
+    if params[:format] == 'pdf'
+      @issue.view_count += 1
+      @issue.save
+    end
 
     @documents = Document.all( :order => :title)
 

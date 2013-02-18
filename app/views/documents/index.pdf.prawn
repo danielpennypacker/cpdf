@@ -4,8 +4,8 @@ prawn_document(:page_size => [ 392, 612], :margin => [ 37, 55, 37, 55]) do |p|
 p.fill_color "000000"
 
 #cover image
-image_number = (@issue.view_count%10)
-p.image Rails.root.join('app', 'assets', 'images', 'issues', "#{image_number}.jpg"), :at => [-55, 575], :width => 392, :height => 612
+
+p.image Rails.root.join('app', 'assets', 'images', 'issues', "#{@issue.nice_count}.jpg"), :at => [-55, 575], :width => 392, :height => 612
 
 p.font_families.update("Maison" => {
 :normal => "#{Rails.root}/app/assets/fonts/maisonneuebook.ttf",
@@ -87,7 +87,7 @@ page = 1
   #running side
   p.repeat(:odd) do
     p.font_size 6  
-    p.draw_text "1st Edition, #{image_number}/50", 
+    p.draw_text "1st Edition, #{@issue.nice_count}/50",
     :at => [310,311],
     :width => 100,
     :rotate => 270,

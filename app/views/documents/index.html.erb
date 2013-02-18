@@ -15,7 +15,7 @@
       </a>
     </li>
     <li id="order">
-        # of 50 <a title="shop">Publish</a>
+        <%= @issue.nice_count %> of 50 <a title="shop">Publish</a>
     </li>
   </ul>
 </div>
@@ -106,16 +106,19 @@
 
     <div id="archive">
       <ul id="covers">
+
+        <% @issue.nice_count.times do | i | %>
         <li>
-            <img src="/images/1.jpg" />          
-            <span class="issue-edition">1st edition, 1/50</span>
+            <img src="/images/<%= i + 1 %>.jpg" />
+            <span class="issue-edition">1st edition, <%= i + 1 %>/50</span>
         </li>
+        <% end %>
 
     </div>
 
     <div id="shop">
       <div id="shop-images">
-        <img src="/images/1.jpg" />          
+        <img src="/images/<%= (@issue.nice_count + 1)%50 %>.jpg" />
         <img src="/images/issues-large/2.jpg" />          
       </div>  
       <div id="order-desc">

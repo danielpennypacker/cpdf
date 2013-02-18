@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0f72309-666d-4c67-b27a-deb88dd8255b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/issues/50.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/issues/0.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/documents_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/documents_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/issue.rb" afterPath="$PROJECT_DIR$/app/models/issue.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/documents/index.html.erb" afterPath="$PROJECT_DIR$/app/views/documents/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/documents/index.pdf.prawn" afterPath="$PROJECT_DIR$/app/views/documents/index.pdf.prawn" />
     </list>
     <ignored path="cpdf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +31,34 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/documents/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="70" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.4924875">
+            <state line="112" column="62" selection-start="3205" selection-end="3205" vertical-scroll-proportion="0.5024">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.pdf.prawn" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/documents/index.pdf.prawn">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="49" selection-start="2984" selection-end="2984" vertical-scroll-proportion="-82.15385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="documents_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/documents_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="22" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="issue.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/issue.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="6" selection-start="79" selection-end="89" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -51,12 +80,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/prawn_helpers.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/db/migrate/20130213061922_add_rows.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130215035816_add_filename_to_documents.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130215035107_create_issues.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/documents_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/documents/show.pdf.prawn" />
         <option value="$PROJECT_DIR$/app/controllers/issues_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -65,6 +92,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20130217204626_addcategory.rb" />
         <option value="$PROJECT_DIR$/app/views/documents/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/document.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/documents_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/issue.rb" />
         <option value="$PROJECT_DIR$/app/views/documents/index.pdf.prawn" />
         <option value="$PROJECT_DIR$/app/views/documents/index.html.erb" />
       </list>
@@ -625,11 +654,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/documents/show.pdf.prawn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -664,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/documents/index.pdf.prawn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="39" selection-start="2986" selection-end="2986" vertical-scroll-proportion="0.03773585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/document.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="75" selection-start="111" selection-end="111" vertical-scroll-proportion="0.03697997">
@@ -699,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/documents_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="126" selection-end="126" vertical-scroll-proportion="0.03576751">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/issues.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -720,9 +730,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/documents_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="22" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/issue.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="79" selection-end="89" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/documents/index.pdf.prawn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="49" selection-start="2984" selection-end="2984" vertical-scroll-proportion="-82.15385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/documents/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="70" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.4924875">
+        <state line="112" column="62" selection-start="3205" selection-end="3205" vertical-scroll-proportion="0.5024">
           <folding />
         </state>
       </provider>
