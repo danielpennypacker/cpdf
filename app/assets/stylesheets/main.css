@@ -13,7 +13,15 @@ body {
 	font-weight:300; 
 	font-style:normal;	
 
+	font-size: 16px;
+	line-height: 24px;
 }
+
+p, ol, ul, td {
+	font-size: 16px !important;
+	line-height: 24px !important;
+}
+
 /* different panes */
 
 #site-container {
@@ -21,18 +29,6 @@ body {
 }
 
 #landing {
-}
-
-#about {
-	background: #f2f2f2;
-}
-
-#archive {
-	background: #ccc;
-}
-
-#shop {
-	background: #999;
 }
 
 #about, #archive, #landing, #shop {
@@ -45,14 +41,10 @@ body {
 #header { 
 	position: fixed;
 	width: 100%;
-	padding: 40px 0px;
+	padding: 40px 40px;
 
 	z-index: 1000000;
 
-	font-family:"Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif !important; 
-	font-size-adjust:0,75; 
-	font-weight:900; 
-	font-style:normal;		
 }
 
 #header h2, #header div, #header ul, #header li {
@@ -62,87 +54,127 @@ body {
 	padding: 0px;
 }
 
-#header li h2 a, #volume {
+#header ul {
+	width: 920px;
+}
+
+#header h2 {
 	font-size: 16px;
+}
+
+#header li a {
 	font-family:"Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif !important; 
 	font-size-adjust:0,75; 
 	font-weight:900; 
 	font-style:normal;		
-}
 
-#header li h2 a{
-	margin: 0px;
-	background: transparent;	
-	padding: 0px 12px 0px 40px;
-}
-
-#header ul {
-	width: 100%;
-	font-family: "Maison Neue", helvetica !important;
-
-}
-
-#header li a {
-    font-size: 10px;
-	padding: 5px 10px 5px 5px;
-	background: #ddd;
-	margin: 0px 0px 0px 15px;
+	margin: 0px 5px;
+	padding-bottom: 7px;
 	text-decoration: none;	
 
 	cursor: pointer;
 }
 
-#header li a#logo:hover {
-	color: yellow;
+#header li a.activeTitle {
+	background: transparent url(/images/wavy-line.png) bottom left repeat-x;
 }
 
-#header li#order {
-	float: right;
-	margin-right: 40px;
+#header li a:hover {
+	background: transparent url(/images/wavy-line-animate.gif) bottom left repeat-x;
+	color: red;
 }
 
-#header li#order a {
-	background: yellow;
-	padding-right: 15px;
+#header li {
+	float: left;
+}
+
+#header li#right-space {
+	margin-left: 317px;
+}
+
+#header li.spacer {
+	padding: 0px 10px;
+}
+
+/* home page */
+
+
+#index {
+	position: absolute;
+	top: 90px;
+	left: 40px;
+	width: 920px;
+}
+
+
+#desc {
+	margin: 60px 0px;
+	padding: 30px 0px;
+	width: 815px;
+
+	border-top: 1px solid #333;
+}
+
+#desc p {
+	font-family:"Maison Neue Mono", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:300; 
+	font-style:normal;	
+
+	line-height: 30px !important;
+
+	width: 715px;
+
 }
 
 
 /* list of articles */
 
-#index {
-	position: absolute;
-	top: 100px;
-	left: 40px;
-	padding: 0px 40px 0px 0px;
+
+#reference_title {
+	width: 815px;
+	border-bottom: 1px solid #333;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
 }
 
-#index ul{
-	font-size: 16px;
-	list-style-type: none;
-	line-height: 32px;
-}
-
-#index ul li {
-	clear: both;
-}
-
-#index ul a{
+#index ul, #reference_title {
 	font-family:"Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif !important; 
 	font-size-adjust:0,75; 
 	font-weight:900; 
-	font-style:normal;	
+	text-decoration: none;
 
+	font-size: 16px;
+
+	list-style-type: none;
+	margin: 5px 0px;
+}
+
+#index ul {
+	width: 815px;
+}
+
+#index ul li {
+	width: 50%;
+	float:left;
+	display:inline;
+	
+	padding: 10px 0px;
+}
+
+#index ul a{
 	color: black;
-	padding-left: 3px;
-	padding-right: 3px;
-
-	display: block;
+	padding: 0px;
+	font-size: 16px;
 	float: left;
+	border-bottom: 1px solid #333;
+	text-decoration: none;	
 }
 
 #index ul a:hover{
-	text-decoration: none;
-	color: white;
+	color: red;
+	background: transparent;
+	border-bottom: 1px solid transparent;
 }
 
 .list-category {
@@ -169,13 +201,22 @@ body {
 	top: 100px;
 	left: 120px;
 	cursor: pointer;
-	text-decoration: underline;
+	border-bottom: 1px solid #333;
+	color: black;
+	padding: 0px;	
+	font-weight: bold;
+
+	font-family:"Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:900; 
+	font-style:normal;	
+
 }
 
 .close:hover {
+	color: red;
+	border: none;
 	text-decoration: none;
-	color: white;
-	background: black;
 }
 
 /* items */
@@ -217,11 +258,16 @@ article {
 	line-height: 80px;
 	text-align: left;
 	width: 800px;
+	padding-right: 0px;
 
 	font-family:"Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif !important; 
 	font-size-adjust:0,75; 
 	font-weight:900; 
-	font-style:normal;		
+	font-style:normal;	
+
+/*	display: inline;
+*/	/*background: transparent url(/images/wavy-line.png) bottom left repeat-x;*/
+
 }
 
 .category {
@@ -229,9 +275,9 @@ article {
 	text-transform: uppercase;
 	letter-spacing: .05em;
 
-	font-family:"Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-family:"Maison Neue Mono", Helvetica, Arial, Sans-Serif, sans-serif !important; 
 	font-size-adjust:0,75; 
-	font-weight:900; 
+	font-weight:300; 
 	font-style:normal;	
 }
 
@@ -265,16 +311,17 @@ article {
 	float: left;
 
 
+}
+
+.tags li{
+	margin-bottom: 5px;
+
 	font-family:"Maison Neue Mono", Helvetica, Arial, Sans-Serif, sans-serif !important; 
 	font-size-adjust:0,75; 
 	font-weight:300; 
 	font-style:normal;	
 
-	font-size: 10px;
-}
-
-.tags li{
-	margin-bottom: 5px;
+	font-size: 12px;
 
 }
 
@@ -323,14 +370,18 @@ article {
 }
 
 .next-title, .prev-title {
-	font-size: 10px;
-	line-height: 12px;
-	padding: 10px 20px 10px 10px;
+	font-size: 12px;
+	line-height: 14px;
 	position: absolute;
 	background: black;
 	color: white;
 	text-align: left;
 	display: none;
+}
+
+.title-padding {
+	padding: 10px 20px 10px 10px;
+
 }
 
 .next-title {
@@ -341,29 +392,11 @@ article {
 	left: 0px;
 }
 
-/* about */
-
-#about #desc {
-	padding: 100px 40px;
-}
-
-#about p {
-	width: 80%;
-	font-size: 16px;
-	line-height: 24px;
-	margin-bottom: 15px;
-
-	font-family:"Maison Neue Book", Helvetica, Arial, Sans-Serif, sans-serif !important; 
-	font-size-adjust:0,75; 
-	font-weight:300; 
-	font-style:normal;	
-
-}
 
 /* archive */
 
 #covers {
-	padding: 100px 35px;
+	padding: 130px 15px;
 }
 
 #covers li {
@@ -372,7 +405,7 @@ article {
 	background: url(/images/issues-small/1.jpg) top left no-repeat;
 	display: block;
 	float: left;
-	margin: 10px;
+	margin: 9px;
 	font-size: 11px;
 	text-align: center;
 }
@@ -392,7 +425,11 @@ article {
 /* order page */
 
 #shop-images {
-	margin: 100px 40px;
+	margin: 150px 40px 200px;
+	display:none ;
+
+	-webkit-transition:all 0.3s;
+
 }
 
 #shop-images img{
@@ -402,43 +439,159 @@ article {
 	display: block;
 
 	margin-bottom: 50px;
+
+	z-index: 1;
+}
+
+
+.transparency-div {
+	width: 581px;
+	height: 450px;
+
+	z-index: 10000;
+	margin-top: -500px;
+
+	position: relative;
+
+}
+
+.img-spacer {
+	height: 50px;
 }
 
 #order-desc {
 	position: fixed;
-	top: 100px;
-	right: 20px;
+	top: 150px;
+	left: 650px;
 	width: 170px;
 
-	font-size: 8px;
+	font-size: 12px;
 
 	display: none;
 
 	margin-bottom: 10px;
 }
 
+#order-desc p{
+	margin-bottom: 10px;
+}
+
 #order-desc li{
 	list-style-type: none;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
+
+	font-size: 12px;
 }
+
+
+#order-desc b{
+	font-family:"Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:900; 
+	font-style:normal;	
+
+}
+
 
 #download {
 	margin-top: 10px;
 }
 
-#download a:hover {
+#pod {
+	margin-top: 15px;
+}
+
+#pod a, #download a{
+	border: 3px solid black;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 5px 28px;
+	text-decoration: none;
+}
+
+#download a {
+	padding: 5px 12px;
+}
+
+#download a:hover, #pod a:hover {
 	background: transparent;
 }
 
 .description {
 	margin: 0px 5px 10px 0px;
 	font-size: 12px;
+
+	-webkit-transition:all 0.3s;
+
 }
 
 #button {
 	margin-left: 0px;
 }
 
+
+/* footer */
+
+#footer {
+	position: fixed;
+	width: 100%;
+	padding: 0px 40px;
+	bottom: 20px;
+
+	z-index: 1000000;
+
+	font-family:"Maison Neue Book", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:300; 
+	font-style:normal;
+}
+
+/* circles */
+
+#circles {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+
+#circle{
+	width: 100px;
+	height: 40px;
+	padding: 35px 0px 25px;
+	background: yellow;
+
+	font-size: 16px;
+	text-align: center;
+	text-decoration: underline;
+
+	font-family:"Maison Neue Mono", Helvetica, Arial, Sans-Serif, sans-serif !important; 
+	font-size-adjust:0,75; 
+	font-weight:300; 
+	font-style:normal;	
+
+	-webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    behavior: url(PIE.htc);		
+
+	-webkit-transform: rotate(7.5deg);  /* Chrome, Safari 3.1+ */
+	-moz-transform: rotate(7.5deg);  /* Firefox 3.5-15 */
+	-ms-transform: rotate(7.5deg);  /* IE 9 */
+	-o-transform: rotate(7.5deg);  /* Opera 10.50-12.00 */
+	transform: rotate(7.5deg);  /* Firefox 16+, IE 10+, Opera 12.50+ */
+
+}
+
+
+#circle:hover{
+	cursor: pointer;
+	color: white;
+	background-color: red;
+	text-decoration: none;
+}
 /* useful */
 
 

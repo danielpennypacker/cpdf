@@ -1,23 +1,25 @@
+<div id="background-color" style="background-color: rgb(<%= 255 - (@issue.nice_count) %>, <%= 255 - (@issue.nice_count) %>, <%= 255 - (@issue.nice_count) %>)">
+
 <div id="header">
   <ul>
-    <li>
-      <h2><a title="landing" id="logo">BookBook</a></h2>
+    <li id="logo">
+      <h2><a title="landing" id="logo" class="activeTitle">Book Book</a></h2>
     </li>      
-    <li id="volume">&bull; 2nd Edition</li>
-    <li>
-      <a title="about">
-        About
-      </a>
+    <li id="volume">&bull; 1st Edition no. <%= (@issue.nice_count)+1 %> of 50</li>
+
+    <li id="right-space" class="spacer">/</li>    
+    <li id="collection">
+      <a title="archive">Past Issues</a>
     </li>
-    <li>
-      <a title="archive">
-        Archive
-      </a>
-    </li>
+    <li class="spacer">/</li>    
     <li id="order">
-        Number <%= @issue.nice_count %> of 50 <a title="shop">Publish</a>
-    </li>
+        <a title="shop">Order Now</a>
+    </li>    
   </ul>
+  <a title="shop" id="circle">
+    Order<br />
+    Now
+  </a>
 </div>
 
 <div id="site-container">
@@ -25,15 +27,23 @@
 
 
     <div id="landing">
+
       <div id="index">
+
+  		<div id="desc">
+  		<p>
+  		  <span class="underline">Book Book</span> is a reference book on the material web. Each issue is compiled and printed on demand, reflecting the latest content present on this website. The pages in each printing take on a 1% increase in black, every printing getting slightly darker. Each edition is published in a limited edition of 50 copies. View the site and book's content by clicking the links below in the Reference List.
+  		</p>
+  		</div>
+      <div id="reference_title">Reference List</div>      
         <ul>
         <% @documents.each do |document| %>
           <li>
-            <span class="list-category"><%= document.category %></span>
+            <!--span class="list-category"><%= document.category %></span-->
             <a href="#article-<%= document.id %>">
               <%= document.title %>
             </a>
-            <span class="list-tags"><%= document.tags %></span>            
+            <!--span class="list-tags"><%= document.tags %></span-->            
           </li>
         <% end %>
           <!--li>
@@ -44,10 +54,9 @@
 
 
       <div id="items">
-
       <% @documents.each do |document| %>
 
-        <article class="item" id="article-<%= document.id %>">
+        <article class="item" id="article-<%= document.id %>" style="background-color: rgba(<%= 255 - (@issue.nice_count) %>, <%= 255 - (@issue.nice_count) %>, <%= 255 - (@issue.nice_count) %>, .9)">
           <div class="close">back to list</div>
           
           <div class="forward">&rarr;<div class="next-title"></div></div>
@@ -93,16 +102,9 @@
       </div>
     </div>
 
-    <div id="about">
-      <div id="desc">
-        <p>
-          <span class="underline">BookBook</span> is an up-to-date graphic design reference book. The printed issue acts as a snapshot of this digital archive, and is compiled, instantly, on demand. Published in a limited edition of 50 copies.
-        </p>
-        <p>
-          This x itteration contains x references.
-        </p>
-      </div>
-    </div>
+    <!--div id="about">
+
+    </div-->
 
     <div id="archive">
       <ul id="covers">
@@ -119,10 +121,30 @@
     <div id="shop">
       <div id="shop-images">
         <img src="/images/<%= (@issue.nice_count + 1)%50 %>.jpg" />
+        <img src="/images/issues-large/3.jpg" />          
+
+        <% if @issue.nice_count < 9 %>
+        <div class="transparency-div" style="background: rgba(0,0,0, .0<%= (@issue.nice_count + 1) %>);">
+        <% else %>
+        <div class="transparency-div" style="background: rgba(0,0,0, .<%= (@issue.nice_count + 1) %>);">
+        <% end %>
+        </div>
+
+        <div class="img-spacer"></div>
         <img src="/images/issues-large/2.jpg" />          
+        
+        <% if @issue.nice_count < 9 %>
+        <div class="transparency-div" style="background: rgba(0,0,0, .0<%= (@issue.nice_count + 1) %>);">
+        <% else %>
+        <div class="transparency-div" style="background: rgba(0,0,0, .<%= (@issue.nice_count + 1) %>);">
+        <% end %>
+        </div>
+
       </div>  
       <div id="order-desc">
-
+        <o>
+          This is number <%= (@issue.nice_count + 1)%50 %> of 50 printings of the first edition of <b>Book Book</b>. Each printing has a unique cover and grayscale level. All orders are placed and printed through <a href="http://peecho.com">peecho.com</a>. 
+        </p>
         <ul>
           <li>          
             <b>Dimensions</b> 5.5 x 8.5 in
@@ -130,26 +152,23 @@
           <li>                   
             <b>Color</b> B&amp;W
           </li>
+          <li>                   
+            <b>Pages</b> 22
+          </li>          
+          <li>                   
+            <b>Binding</b> Perfect Bound
+          </li>          
           <li>            
             <b>Edition</b> <%= (@issue.nice_count + 1)%50 %>/50
           </li>  
         </ul>
-        <div id="download">
-          <a href="/documents.pdf"><img src="/images/download.png" alt="download" /></a>
-        </div>
-
-        <!--div id="button">
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="8EB6HFD5SCXH8">
-          <input type="image" src="/images/button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
-        </div>
-
-        <div class="description">
-          or, for a small shipping and assembly fee I can assemble and mail you a copy.
-        </div-->
+    		<div id="pod">
+          <a title="Peecho" href="http://www.peecho.com/" class="peecho-print-button" data-filetype="pdf" data-width="136" data-height="210" data-pages="22" data-src="http://www.bookbook.be/documents.pdf" data-title="BookBook" data-thumbnail="chrishamamoto.com/thumbnail.png" data-currency="USD" data-locale="en_EN" data-style="false" data-text="Print">Print</a>
+    		</div>
     </div>
   </div>
+</div>
+<div id="footer">
+  &copy; BookBook 2013 &bull; Special thanks to <a href="http://danielpennypacker.com/">Daniel Pennypacker</a> for coding help.
+</div>
 </div>

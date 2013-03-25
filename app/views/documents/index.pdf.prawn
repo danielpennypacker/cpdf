@@ -19,6 +19,36 @@ p.font_families.update("Maison" => {
 
 p.font "Maison"
 
+#blank inside cover
+p.start_new_page
+  #opacity square
+  p.transparent( (@issue.view_count%50).to_f/100) do
+    p.rectangle [-55, 575], 392, 612
+    p.fill
+  end
+
+#title page
+p.start_new_page
+p.fill_color "000000"
+p.rectangle [-55, 575], 392, 612
+p.fill
+
+
+p.fill_color "ffffff"
+p.font_size 12
+
+p.move_down 10
+p.draw_text "Book Book", :style => :bold, :at => [205, p.cursor], :leading => 2
+p.move_down 20
+p.draw_text "/", :style => :bold, :at => [230, p.cursor], :leading => 2
+p.move_down 20
+p.draw_text "Graphic Design", :style => :bold, :at => [205, p.cursor], :leading => 2
+p.move_down 20
+p.draw_text "/", :style => :bold, :at => [230, p.cursor], :leading => 2
+p.move_down 20
+p.draw_text "Reference Book", :style => :bold, :at => [205, p.cursor], :leading => 2
+
+
 p.start_new_page
 
 #TOC
@@ -59,12 +89,40 @@ p.draw_text "Book Book • 1st Edition", :style => :bold, :at => [50, p.cursor],
 
 p.move_down( p.cursor - 500 )
 
-p.text_box "An up-to-date graphic design reference book. Each Issue acts as a snapshot of the booklets corresponding website. And is published in a limited edition of 50 copies through on-demand printers. As copies are printed, 1% black is added across the document. Once 50% black is reached, issue 2 is released for another 50 copies, and resets the cycle.
+p.text_box "An up-to-date graphic design reference book. Each Issue acts as a snapshot of the booklets corresponding website. And is published in a limited edition of 50 copies through on-demand printers. As copies are printed, 1% black is added across the document. Once 50% black is reached, issue 2 is released for another 50 copies, and resets the cycle.", :at => [50, p.cursor], :leading => 2
 
-This 23rd printed itteration contains 16 references, in 16 pages. It was created for the Winter 2012 Thesis Research workshop with Leonardo Sonnoli. Quotes describing references are set in Arhem, my notes on the subject are set in Aperçu.An up-to-date graphic design reference book. Each Issue acts as a snapshot of the booklets corresponding website. And is published in a limited edition of 50 copies through on-demand printers. As copies are printed, 1% black is added across the document. Once 50% black is reached, issue 2 is released for another 50 copies, and resets the cycle.
 
-This 23rd printed itteration contains 16 references, in 16 pages. It was created for the Winter 2012 Thesis Research workshop with Leonardo Sonnoli. Quotes describing references are set in Arhem, my notes on the subject are set in Aperçu.", :at => [50, p.cursor], :leading => 2
+#blank black page
+p.start_new_page
+p.fill_color "000000"
+p.rectangle [-55, 575], 392, 612
+p.fill
 
+#blank black page
+p.start_new_page
+p.fill_color "000000"
+p.rectangle [-55, 575], 392, 612
+p.fill
+
+p.fill_color "ffffff"
+p.font_size 12
+
+p.move_down 10
+p.draw_text "16 References", :style => :bold, :at => [205, p.cursor], :leading => 2
+p.move_down 20
+p.draw_text "/", :style => :bold, :at => [230, p.cursor], :leading => 2
+p.move_down 20
+p.draw_text "Ordered", :style => :bold, :at => [205, p.cursor], :leading => 2
+p.move_down 20
+p.draw_text "/", :style => :bold, :at => [230, p.cursor], :leading => 2
+p.move_down 20
+p.draw_text "Alphabetically", :style => :bold, :at => [205, p.cursor], :leading => 2
+
+#blank black page
+p.start_new_page
+p.fill_color "000000"
+p.rectangle [-55, 575], 392, 612
+p.fill
 
 p.start_new_page
 
@@ -74,7 +132,7 @@ p.fill_color "000000"
 letter_count = 1
 
 #for printing out the page number
-page = 1
+page = 2
 @documents.each_with_index do | document, index |
   page = page + 1
 
@@ -169,7 +227,8 @@ page = 1
       :at => [0, y_position + -10],
       :width => 39,
       :align => :right,
-      :rotate_around => :center
+      :rotate_around => :center,
+      :leading => 3
   end
 
 
@@ -209,7 +268,31 @@ page = 1
     if index != ( @documents.length - 1)
       p.start_new_page
     end
+  
 
   end
+
+  p.start_new_page
+  #opacity square
+  p.transparent( (@issue.view_count%50).to_f/100) do
+    p.rectangle [-55, 575], 392, 612
+    p.fill
+  end
+
+  p.start_new_page
+  #opacity square
+  p.transparent( (@issue.view_count%50).to_f/100) do
+    p.rectangle [-55, 575], 392, 612
+    p.fill
+  end
+
+  p.text_box "Designed and developed under the guidance of Leonardo Sonnoli, RISD Winter Session 2013. With programming assistance by Daniel Pennypacker. Typeset in Maison Neue by MilieuGrotesque, printed by Peecho.", :at => [0, 40], :leading => 2
+
+  p.start_new_page
+  #opacity square
+  p.transparent( (@issue.view_count%50).to_f/100) do
+    p.rectangle [-55, 575], 392, 612
+    p.fill
+  end 
 
 end
