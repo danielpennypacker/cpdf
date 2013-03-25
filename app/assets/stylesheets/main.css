@@ -426,6 +426,11 @@ article {
 	display: block;
 }
 
+#bottom-space {
+	clear: both;
+	height: 100px;
+}
+
 /* order page */
 
 #shop-images {
