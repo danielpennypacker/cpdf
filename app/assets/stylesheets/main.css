@@ -426,7 +426,7 @@ article {
 	display: block;
 }
 
-#bottom-space {
+.bottom-space {
 	clear: both;
 	height: 100px;
 }
