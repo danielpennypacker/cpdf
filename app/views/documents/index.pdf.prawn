@@ -5,7 +5,7 @@ p.fill_color "000000"
 
 #cover image
 
-p.image Rails.root.join('app', 'assets', 'images', 'issues', "#{@issue.nice_count}.jpg"), :at => [-55, 575], :width => 392, :height => 612
+p.image Rails.root.join('app', 'assets', 'images', 'issues', "#{@issue.nice_count}.png"), :at => [-55, 575], :width => 392, :height => 612
 
 p.font_families.update("Maison" => {
 :normal => "#{Rails.root}/app/assets/fonts/maisonneuebook.ttf",
